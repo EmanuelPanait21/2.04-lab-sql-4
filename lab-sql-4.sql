@@ -40,7 +40,7 @@ select title, length(title) from film  order by  length(title) desc limit 10;
 select title, length from film  order by length desc limit 10; 
 
 -- 9.How many films include Behind the Scenes content?
-select count(special_features) from film where special_features  like  '%Behind the Scenes%';
+select count(film_id) from film where special_features  like  '%Behind the Scenes%';
 
 -- 10.List films ordered by release year and title in alphabetical order. 
 select title, release_year from film order by  title asc, release_year asc;
